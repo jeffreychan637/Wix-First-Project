@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node_modules/.bin/mocha tests/",
     "start": "node WixBackend/server",
-    "postinstall": "npm run build",
+    "postinstall": "npm run grunt",
     "build": "npm run bower && npm run grunt",
     "grunt": "./node_modules/grunt-cli/bin/grunt --base WixFrontend --gruntfile WixFrontend/Gruntfile.js build --force",
     "bower": "cd WixFrontend; ../node_modules/.bin/bower install; cd .."
@@ -20,6 +20,7 @@
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.5.0",
     "grunt-bower-install": "~0.7.0",
+    "grunt-bower-task": "^0.3.4",
     "grunt-cdnify": "0.0.2",
     "grunt-cli": "^0.1.13",
     "grunt-concurrent": "~0.4.0",

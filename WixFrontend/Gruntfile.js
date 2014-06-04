@@ -19,6 +19,18 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+    bower: {
+      install: {
+        options: {
+          targetDir: 'app/bower_components',
+          install: true,
+          verbose: false,
+          cleanTargetDir: true,
+          cleanBowerDir: true
+        }
+      }
+    },
+
     // Project settings
     yeoman: {
       // configurable paths
