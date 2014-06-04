@@ -1,0 +1,1 @@
+This repository contains the tutorial files created and modified during the Wix Internship of summer 2014. It is written in AngularJS and node.js and tested with Jasmine, Mocha, Sinon, Chai, and Supertest.
