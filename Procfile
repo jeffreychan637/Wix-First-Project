@@ -1,1 +1,1 @@
-web: node wixbackend/server
+web: node WixBackend/server
