@@ -9,7 +9,7 @@
     "postinstall": "npm run build",
     "build": "npm run bower && npm run grunt",
     "grunt": "./node_modules/grunt-cli/bin/grunt --base WixFrontend --gruntfile WixFrontend/Gruntfile.js build --force",
-    "bower": "./node_modules/.bin/bower install"
+    "bower": "cd WixFrontend; ../node_modules/.bin/bower install; cd .."
   },
   "author": "",
   "license": "ISC",
