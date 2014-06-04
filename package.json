@@ -6,10 +6,9 @@
   "scripts": {
     "test": "node_modules/.bin/mocha tests/",
     "start": "node WixBackend/server",
-    "preinstall": "npm run build && npm run postinstall",
+    "preinstall": "npm run build",
     "postinstall": "echo build successful!",
-    "build": "./node_modules/grunt-cli/bin/grunt --base WixFrontend --gruntfile WixFrontend/Gruntfile.js build --force",
-    "begin": "npm run build && npm run start"
+    "build": "./node_modules/grunt-cli/bin/grunt --base WixFrontend --gruntfile WixFrontend/Gruntfile.js build --force"
   },
   "author": "",
   "license": "ISC",
