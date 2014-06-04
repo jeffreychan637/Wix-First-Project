@@ -13,6 +13,8 @@ module.exports = function (grunt) {
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
+  //allows gruntfile to find the dependency modules
+  grunt.file.expand('../node_modules/grunt-*/tasks').forEach(grunt.loadTasks);
 
   // Define the configuration for all the tasks
   grunt.initConfig({

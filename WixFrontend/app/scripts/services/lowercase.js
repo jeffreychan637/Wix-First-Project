@@ -7,7 +7,7 @@ angular.module('wixApp').factory('lowerCaser', function() {
       // } else {
       //   return '';
       return toBeLowercased.toLowerCase();
-    }
+    };
   });
 
 

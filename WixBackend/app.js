@@ -11,7 +11,7 @@ app.get('/hello.txt', function(req, res) {
     res.send('Hello World');
 });
 
-app.use(express.static(__dirname + '/public'));    // '/../WixFrontend/dist')); //+ '/public'));
+app.use(express.static(__dirname + '/../WixFrontend/dist')); //+ '/public'));
 app.use(parser());
 
 app.post('/post', function(req, res) {
