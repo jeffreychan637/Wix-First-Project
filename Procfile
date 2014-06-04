@@ -1,1 +1,1 @@
-web: node WixBackend/server
+web: npm start
