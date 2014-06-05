@@ -403,8 +403,8 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build', [
-    'bower'
     'clean:dist',
+    'bower',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
